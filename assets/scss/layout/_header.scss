@@ -1,0 +1,27 @@
+.input-group {
+  max-width: 100%;
+  @include media-breakpoint-up(lg){
+    max-width: 276px;
+  }
+
+  &-text{
+    border: none;
+    background-color: $white;
+  }
+
+  &:focus-within .search-text{
+    color: #212529;
+    font-weight: bold;
+  }
+}
+.form-control {
+  border: none;
+}
+.search-text{
+  color: #ADB5BD;
+}
+#search:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
+}
