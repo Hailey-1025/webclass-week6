@@ -4,6 +4,7 @@ import 'bootstrap';
 
 console.log("Hello world!");
 
+// 首頁
 // 精選文章
 var swiper = new Swiper(".mySwiper-text", {
   slidesPerView: 1,
@@ -24,10 +25,35 @@ var swiper = new Swiper(".mySwiper-text", {
     768: {
       slidesPerView: 2,
       slodesPerGroup: 2,
-      spaceBetween: 48,
+      spaceBetween: 48,    
     },
   },
 });
+
+var swiper = new Swiper(".mySwiper-text-mobile", {
+  slidesPerView: 1,
+  slodesPerGroup: 2,
+  spaceBetween: 48,
+
+  pagination: {
+    el: ".swiper-pagination-custom2",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".swiper-next-text",
+    prevEl: ".swiper-prev-text",
+  },
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 2,
+      slodesPerGroup: 2,
+      spaceBetween: 48,    
+    },
+  },
+});
+
 
 // 大家都在看
 var swiper = new Swiper(".mySwiper", {
@@ -92,3 +118,20 @@ var swiper = new Swiper(".mySwiper-case", {
     hide: true,
   },
 });
+
+
+// 登入註冊頁面
+// Gpt寫的
+(function () {
+  'use strict';
+  var forms = document.querySelectorAll('.needs-validation');
+  Array.prototype.slice.call(forms).forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+      }, false);
+  });
+})();

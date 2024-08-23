@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>註冊｜Vivre</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <main class="container py-10">
+            <div class="row my-5 justify-content-center">
+                <div class="col-lg-8">
+                    <div class="bg-white rounded border border-yellow-300 mx-n3 mx-ssm-auto">
+                        <div class="p-6 p-md-9">
+                            <h4 class="text-secondary mb-9">註冊</h4>
+                            <form class="mb-6 mb-md-9 needs-validation" novalidate>
+                                <div class="mb-4">
+                                    <label for="accountNumber" class="form-label mb-3">會員帳號</label>
+                                    <input type="text" class="form-control rounded bg-gray-100" id="accountNumber"
+                                        placeholder="請輸入會員帳號" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="password" class="form-label mb-3">密碼</label>
+                                    <input type="password" class="form-control rounded bg-gray-100"
+                                        id="password" placeholder="請輸入密碼" required>
+                                </div>
+                                <div class="mb-6 mb-md-9">
+                                    <label for="email" class="form-label mb-3">電子信箱</label>
+                                    <input type="email" class="form-control rounded bg-gray-100"
+                                        id="email" placeholder="請輸入電子信箱" required>
+                                </div>
+                                <button type="submit" class="btn btn-secondary w-100">
+                                    立即註冊
+                                    <i class="bi bi-arrow-right ms-3"></i>
+                                </button>
+                            </form>
+                            <div class="d-flex align-items-center mb-6 mb-md-9">
+                                <div class="border-top border-gray-200" style="width: 100%;height: 1px;"></div>
+                                <p class="px-3 text-gray-300 text-nowrap">或以其他方式註冊</p>
+                                <div class="border-top border-gray-200" style="width: 100%;height: 1px;"></div>
+                            </div>
+                            <div class="bg-gray-100 rounded-pill text-center mb-2">
+                                <a class="fw-bold link-gray-500 d-block py-3" href="#">
+                                    <img class="me-3" src="../assets/images/icons-google.png" alt="google">
+                                    使用 Google 登入</a>
+                            </div>
+                            <div class="bg-gray-100 rounded-pill text-center mb-6 mb-md-9">
+                                <a class="fw-bold link-gray-500 d-block py-3" href="#">
+                                    <img class="me-3" src="../assets/images/icons-facebook.png" alt="google">
+                                    使用 Facebook 登入</a>
+                            </div>
+                            <div class="text-center">
+                                <p>已經是會員了？ 
+                                    <a class="ms-2 link-secondary" href="login.html">點此登入</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <%- include('./layout/footer'); -%>
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>
