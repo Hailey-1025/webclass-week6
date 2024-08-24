@@ -1,0 +1,41 @@
+.nav-pills .nav-link-sub.active{
+    color: $white;
+    background-color: $accent-200;
+}
+
+
+.list-group-item-sub{
+    color: $gray-400;
+    border: 1px solid $yellow-300;
+    &:hover{
+        color: $gray-400;
+    }
+    a{
+        color: $gray-400;
+    }
+}
+.list-group-item-sub.active {
+    z-index: 2;
+    color: $gray-500;
+    background-color: var(--bs-list-group-active-bg);
+    border: 2px solid $accent-200;
+    .h1{
+        color: $accent-200;
+    }
+    span{
+        color: $gray-400;
+    }
+    a{
+        background-color: $accent-200;
+        border-color: $accent-200;
+        color: $white;
+    }
+}
+.code-btn{
+    color: $gray-400;
+    &:hover{
+        background: $gray-200;
+        color: $gray-500;
+        border: 1px solid $gray-200;
+    }
+}

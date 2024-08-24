@@ -25,7 +25,7 @@ var swiper = new Swiper(".mySwiper-text", {
     768: {
       slidesPerView: 2,
       slodesPerGroup: 2,
-      spaceBetween: 48,    
+      spaceBetween: 48,
     },
   },
 });
@@ -49,7 +49,7 @@ var swiper = new Swiper(".mySwiper-text-mobile", {
     768: {
       slidesPerView: 2,
       slodesPerGroup: 2,
-      spaceBetween: 48,    
+      spaceBetween: 48,
     },
   },
 });
@@ -126,12 +126,12 @@ var swiper = new Swiper(".mySwiper-case", {
   'use strict';
   var forms = document.querySelectorAll('.needs-validation');
   Array.prototype.slice.call(forms).forEach(function (form) {
-      form.addEventListener('submit', function (event) {
-          if (!form.checkValidity()) {
-              event.preventDefault();
-              event.stopPropagation();
-          }
-          form.classList.add('was-validated');
-      }, false);
+    form.addEventListener('submit', function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    }, false);
   });
 })();

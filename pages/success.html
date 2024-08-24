@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>付款｜Vivre</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <main class="container pt-8 pb-9 py-lg-10">
+            <div class="text-center text-accent-200 mb-6 mb-lg-9">
+                <h1><i class="bi bi-check2-circle me-4"></i>
+                    付款成功</h1>
+            </div>
+            <div class="row my-5 justify-content-center">
+                <div class="col-lg-6">
+                    <div class="bg-white rounded border border-yellow-300">
+                        <div class="p-6 p-md-9">
+                            <h4 class="mb-6 mb-md-9">訂購資訊</h4>
+                            <div class="py-6 border-top border-bottom border-gray-200 mb-6 mb-lg-9">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5>輕量型方案</h5>
+                                    <h5>NT 1,188</h5>
+                                </div>
+                                <div class="text-gray-300 fw-bold">
+                                    <p class="mb-6 mb-lg-9">年繳</p>
+                                    <div class="d-flex justify-content-between mb-4">
+                                        <p>開始日</p>
+                                        <p class="text-gray-400">2024 / 5 / 1</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p>終止日</p>
+                                        <p class="text-gray-400">2025 / 5 / 1</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="article-member.html" class="btn btn-secondary d-block">瀏覽文章
+                                <i class="bi bi-arrow-right ms-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <%- include('./layout/footer'); -%>
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>
