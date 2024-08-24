@@ -135,3 +135,14 @@ var swiper = new Swiper(".mySwiper-case", {
     }, false);
   });
 })();
+
+// 文章頁面
+var swiper = new Swiper(".mySwiper-article", {
+  slidesPerView: 1,
+  spaceBetween: 24,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});
